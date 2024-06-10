@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /977 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
+    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /neek 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["977"]))
+@bot.on_message(filters.command(["neek"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐒𝐞𝐧𝐝 𝐓𝐱𝐭 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐭 🤍')
     input: Message = await bot.listen(editable.chat.id)
@@ -110,7 +110,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("𝐓𝐡𝐮𝐦𝐛 𝐔𝐫𝐥/nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("𝐓𝐡𝐮𝐦𝐛 𝐔𝐫𝐥 \nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**{str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍 \n**╾──────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡: ** » **{raw_text0}** \n**╾──────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** {MR}'
-                cc1 = f'**{str(count).zfill(3)}.{𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍 \n**╾──────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡: ** » **{raw_text0}** \n**╾──────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** {MR}'
+                cc = f'**{str(count).zfill(3)}**. {𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍 \n**╾──────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡 ** » {raw_text0} \n**╾──────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** **{MR}**'
+                cc1 = f'**{str(count).zfill(3)}**.{𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍 \n**╾──────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡 ** » {raw_text0} \n**╾──────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** **{MR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -206,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝗗𝗢𝗡𝗘 𝗕𝗢𝗦𝗦🩷✔️**")
+    await m.reply_text("**𝐍𝐄𝐄𝐊🩷 **")
 
 
 bot.run()
