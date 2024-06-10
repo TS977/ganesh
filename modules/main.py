@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /upload 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
+    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /upload 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
 
 
 @bot.on_message(filters.command("stop"))
