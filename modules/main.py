@@ -65,7 +65,7 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝑻𝒐𝒕𝒂𝒍 𝑳𝒊𝒏𝒌𝒔 𝑭𝒐𝒖𝒏𝒅 🌟 ** **{len(links)}**\n\****𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮𝐫 𝐖𝐚'𝐚𝐧𝐚 𝐓𝐨 𝐒𝐭𝐚𝐫𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 👊**1**")
+    await editable.edit(f"**𝑻𝒐𝒕𝒂𝒍 𝑳𝒊𝒏𝒌𝒔 𝑭𝒐𝒖𝒏𝒅 🌟 {len(links)}**\n**𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮𝐫 𝐖𝐚'𝐚𝐧𝐚 𝐓𝐨 𝐒𝐭𝐚𝐫𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 👊**1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
