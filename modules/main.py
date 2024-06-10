@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /upload 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
+    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\n𝐔𝐬𝐞 /977 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["uplaod"]))
+@bot.on_message(filters.command(["977"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐒𝐞𝐧𝐝 𝐓𝐱𝐭 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐭 🤍')
     input: Message = await bot.listen(editable.chat.id)
