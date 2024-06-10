@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ** ┈━═My Freind═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me /upload Command And Then Follow Few Steps..")
+    editable = await m.reply_text("𝐇𝐞𝐲 👋 !!! \n 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝟗𝟕𝟕🤍 ,\𝐧𝐔𝐬𝐞 /upload 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐓𝐱𝐭")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,9 +41,9 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["upload"]))
+@bot.on_message(filters.command(["uplaod"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
+    editable = await m.reply_text('𝐒𝐞𝐧𝐝 𝐓𝐱𝐭 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐭 🤍')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -65,18 +65,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝑻𝒐𝒕𝒂𝒍 𝑳𝒊𝒏𝒌𝒔 𝑭𝒐𝒖𝒏𝒅 🌟 ** **{len(links)}**\n\****𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮𝐫 𝐖𝐚'𝐚𝐧𝐚 𝐓𝐨 𝐒𝐭𝐚𝐫𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 👊**1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Now Please Send Me Your Batch Name**")
+    await editable.edit("**𝐄𝐧𝐭𝐞𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 💫 **")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝐄𝐧𝐭𝐞𝐫 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧**\n144,240,360,480,720,1080 Please Choose ")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -100,17 +100,17 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file")
+    await editable.edit("𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐂𝐚𝐩𝐭𝐢𝐨𝐧 𝐖𝐡𝐢𝐜𝐡 𝐭𝐨 𝐁𝐞 𝐀𝐝𝐝𝐞𝐝 𝐈𝐧 𝐅𝐢𝐥𝐞 🗃️ ")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     highlighter  = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'SHIVAAY977':
+    if raw_text3 == '𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍':
         MR = highlighter 
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("𝐓𝐡𝐮𝐦𝐛 𝐔𝐫𝐥/nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] 𝗩𝗜𝗗_𝗜𝗗:** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭} SHIVAAY977.mkv\n**𝗕𝗔𝗧𝗖𝗛** » **{raw_text0}**\n\n**𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 ➤** {MR}'
-                cc1 = f'**[📁] 𝗣𝗗𝗙_𝗜𝗗:** {str(count).zfill(3)}.\n**𝙏𝙄𝙏𝙇𝙀 ➤** {𝗻𝗮𝗺𝗲𝟭} SHIVAAY977.pdf\n**𝗕𝗔𝗧𝗖𝗛** » **{raw_text0}**\n\n**𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 ➤** {MR}'
+                cc = f'**{str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍.mkv \n**╾───────────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡: ** » **{raw_text0}** \n**╾───────────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** {MR}'
+                cc1 = f'**{str(count).zfill(3)}.{𝗻𝗮𝗺𝗲𝟭} 𝐒𝐇𝐈𝐕𝐀𝐀𝐘 𝟗𝟕𝟕 🤍.pdf \n**╾───────────────────────╼** \n**📚𝐁𝐚𝐭𝐜𝐡: ** » **{raw_text0}** \n**╾───────────────────────╼** \n**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 : ** {MR}'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
